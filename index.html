@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colônia Selene – Aventura na Lua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="caixa-principal">
+
+    <!-- Cena em pixel art: lua cheia, base lunar, astronauta e bandeira -->
+    <svg class="cena" viewBox="0 0 160 80" shape-rendering="crispEdges" role="img" aria-label="Paisagem lunar em pixel art com lua cheia e uma base">
+      <defs>
+        <pattern id="esparso" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#433900"/></pattern>
+        <pattern id="xadrez" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#433900"/><rect x="1" y="1" width="1" height="1" fill="#433900"/></pattern>
+        <pattern id="xadrezr" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#6c5eb5"/><rect x="1" y="1" width="1" height="1" fill="#6c5eb5"/></pattern>
+        <pattern id="tracos" width="8" height="1" patternUnits="userSpaceOnUse"><rect x="1" width="3" height="1" fill="#6c5eb5"/></pattern>
+        <pattern id="pontos" width="4" height="1" patternUnits="userSpaceOnUse"><rect width="2" height="1" fill="#433900"/></pattern>
+        <clipPath id="recorteLua"><path d="M8 0h6v1H8z M5 1h12v1H5z M4 2h14v1H4z M3 3h16v1H3z M2 4h18v1H2z M1 5h20v2H1z M0 7h22v8H0z M1 15h20v2H1z M2 17h18v1H2z M3 18h16v1H3z M4 19h14v1H4z M5 20h12v1H5z M8 21h6v1H8z"/></clipPath>
+        <g id="pedra"><rect x="1" width="3" height="1" fill="#fff"/><rect y="1" width="5" height="2" fill="#d8d0f0"/><rect x="2" y="3" width="6" height="1" fill="#433900"/></g>
+        <g id="cratera"><rect x="3" width="9" height="1" fill="#fff"/><rect x="1" y="1" width="3" height="1" fill="#fff"/><rect x="11" y="1" width="4" height="1" fill="#433900"/><rect x="3" y="2" width="10" height="1" fill="#433900"/></g>
+      </defs>
+      <rect width="160" height="80" fill="#000"/>
+      <g fill="#fff"><rect x="10" y="12" width="1" height="1"/><rect x="52" y="6" width="1" height="1"/><rect x="74" y="20" width="1" height="1"/><rect x="92" y="10" width="1" height="1"/><rect x="146" y="26" width="1" height="1"/><rect x="20" y="26" width="1" height="1"/></g>
+      <g fill="#6c5eb5"><rect x="26" y="9" width="3" height="1"/><rect x="27" y="8" width="1" height="3"/><rect x="100" y="4" width="3" height="1"/><rect x="101" y="3" width="1" height="3"/></g>
+      <g fill="#fff"><rect x="27" y="9" width="1" height="1"/><rect x="101" y="4" width="1" height="1"/></g>
+      <g transform="translate(116 6)">
+        <path d="M8 0h6v1H8z M5 1h12v1H5z M4 2h14v1H4z M3 3h16v1H3z M2 4h18v1H2z M1 5h20v2H1z M0 7h22v8H0z M1 15h20v2H1z M2 17h18v1H2z M3 18h16v1H3z M4 19h14v1H4z M5 20h12v1H5z M8 21h6v1H8z" fill="#fff"/>
+        <rect x="7" y="8" width="15" height="14" fill="url(#xadrezr)" clip-path="url(#recorteLua)"/>
+      </g>
+      <rect y="34" width="160" height="1" fill="url(#pontos)"/>
+      <rect y="38" width="160" height="3" fill="url(#esparso)"/>
+      <rect y="41" width="160" height="5" fill="url(#xadrez)"/>
+      <rect y="46" width="160" height="12" fill="#433900"/>
+      <rect y="50" width="160" height="1" fill="url(#tracos)"/>
+      <rect y="58" width="160" height="3" fill="#433900"/><rect y="58" width="160" height="3" fill="url(#xadrezr)"/>
+      <rect y="61" width="160" height="19" fill="#6c5eb5"/>
+      <use href="#cratera" x="72" y="68"/><use href="#cratera" x="18" y="60"/><use href="#cratera" x="132" y="60"/>
+      <use href="#pedra" x="8" y="66"/><use href="#pedra" x="100" y="72"/><use href="#pedra" x="146" y="68"/><use href="#pedra" x="60" y="75"/>
+      <!-- Base lunar, astronauta e bandeira -->
+      <path d="M30 59h20v2H30z M31 57h18v2H31z M33 55h14v2H33z M35 53h10v2H35z M37 51h6v2H37z" fill="#b8a8e8"/>
+      <rect x="34" y="56" width="3" height="1" fill="#fff"/><rect x="38" y="57" width="4" height="4" fill="#000"/>
+      <rect x="52" y="50" width="1" height="11" fill="#fff"/><rect x="51" y="49" width="3" height="1" fill="#fff"/>
+      <rect x="88" y="62" width="5" height="4" fill="#fff"/><rect x="90" y="63" width="3" height="2" fill="#433900"/>
+      <rect x="88" y="66" width="5" height="5" fill="#d8d0f0"/><rect x="88" y="71" width="2" height="3" fill="#fff"/><rect x="91" y="71" width="2" height="3" fill="#fff"/>
+      <rect x="108" y="60" width="1" height="14" fill="#fff"/><rect x="109" y="60" width="6" height="4" fill="#fff"/><rect x="110" y="61" width="3" height="2" fill="#433900"/>
+    </svg>
+
+    <div class="tela-inicial">
+      <h1>Colônia Selene</h1>
+      <p>Você acaba de pousar na Lua. Explore, investigue e tome decisões para construir a primeira colônia lunar.</p>
+      <button class="iniciar-btn">Iniciar</button>
+    </div>
+    <div class="tela-personagens">
+      <h2>Escolha seu personagem</h2>
+      <div class="lista-personagens"></div>
+    </div>
+
+    <div class="retrato"></div>
+    <div class="caixa-perguntas"></div>
+    <div class="caixa-alternativas"></div>
+
+    <div class="caixa-resultado">
+      <h2 class="titulo-resultado"></h2>
+      <p class="texto-resultado"></p>
+      <button class="novamente-btn">Recomeçar do início</button>
+      <button class="creditos-btn">Ver créditos</button>
+    </div>
+
+    <div class="tela-creditos">
+      <h2>Créditos</h2>
+      <p><strong>Jogo:</strong> Colônia Selene – a primeira colônia na Lua</p>
+      <p><strong>Roteiro e programação:</strong> [Nomes dos integrantes]</p>
+      <p><strong>Turma:</strong> [Série e turma]</p>
+      <p><strong>Escola:</strong> [Nome da escola]</p>
+      <p><strong>Disciplina:</strong> Matemática II — Programação</p>
+      <p><strong>Professor:</strong> Fábio Cesar Bimbati</p>
+      <p><strong>Referências:</strong> [Fontes utilizadas no projeto]</p>
+      <p>Obrigado por jogar!</p>
+      <button class="voltar-inicio-btn">Voltar à tela inicial</button>
+    </div>
+
+  </main>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
